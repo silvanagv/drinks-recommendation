@@ -1,0 +1,202 @@
+body, html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-style:'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: 300;
+}
+
+.title span {
+  font-weight: 900;
+}
+
+.title p {
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+p {
+  text-transform: none;
+  text-align: justify;
+}
+
+form, form input, input {
+  font-size: 25px;
+  text-align: left;
+  font-weight: 300;
+  text-transform: none;
+  text-align: center;
+}
+
+form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p.results {
+  width: 40%;
+  font-size: 1em;
+  text-align: center;
+  float: left;
+  font-weight: 300;
+  padding-left: 15%;
+}
+
+img.results {
+  max-width: 20%;
+  display: block;
+  margin: auto;
+  float: right;
+  padding-right: 15%;
+}
+
+form#wholeform {
+  margin-top: 3em;
+}
+
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 1em;
+  color: #6496c8;
+  background-color: white;
+  border: solid 2px #6496c8;
+  -webkit-transition: font-size 1s, color 1s, border-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, font-size 1s, color 1s, border-color 1s, transform 1s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transition: color 2s;
+  border-color: #6496c8;
+  color: white;
+  background-color: #6496c8;
+  font-size: 30px;
+  -webkit-transition: background-color 1s, font-size 1s, color 1s, border-color 1s, -webkit-transform 1s;
+  transition: font-size 1s, color 1s, border-color 1s, transform 1s;
+}
+
+button:active {
+  color: white;
+  background-color: #27496d;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+
+img.drink, .tastebox img {
+  width: 100px;
+}
+
+h3.drink-question, h3.taste-question, h3.money-question {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+div.drinks, div.tastes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.drinks p, .tastes p {
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+div.drinkbox, div.tastebox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #6496c8;
+  border-radius: 1em;
+}
+
+div.drinkbox:hover, div.tastebox:hover {
+  border: 2px solid #27496d;
+  transition: border-color: 2s;
+  -webkit-transition; border-color: 2s;
+}
+
+.drinklabel, .tastebox p {
+  text-align: center;
+  color: #6496c8;
+}
+
+.drinkbox:hover .drinklabel, .tastebox:hover p {
+color: red;
+transition: color 2s;
+visibility: visible;
+
+
+}
+
+
+img.drink:hover, .tastebox img:hover {
+  width: 130px;
+  transition: width 1s;
+}
+/* media queries
+--------------------------------------------- */
+@media (max-width: 480px)
+
+{
+
+  form, form input, input {
+    font-size: 15px;
+    text-align: left;
+    font-weight: 300;
+    text-transform:  none;
+    margin: 0;
+    padding: 0;
+  }
+
+  form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+  }
+
+  p.results {
+    width: 80%;
+    font-size: 0.5em;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  img.results {
+    max-width: 80%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.5em;
+  }
+
+}
